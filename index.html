@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Egyptian X O</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>The Egyptian X O</h1>
+  <audio id="move-sound-x" src="move-sound-x.mp3"></audio>
+  <audio id="move-sound-o" src="move-sound-o.mp3"></audio>
+  <audio id="win-sound-x" src="win-sound-x.mp3"></audio>
+  <audio id="win-sound-o" src="win-sound-o.mp3"></audio>
+  <audio id="draw-sound" src="draw-sound.mp3"></audio>
+  <audio id="delay-sound" src="delay-sound.mp3"></audio>
+  <audio id="play-again-sound" src="play-again-sound.mp3"></audio>
+  <div id="board">
+    <div class="row">
+      <div class="cell" onclick="makeMove(0, 0)">
+        <img id="cell-0-0" src="" alt="" onclick="makeMove(0, 0)">
+      </div>
+      <div class="cell" onclick="makeMove(0, 1)">
+        <img id="cell-0-1" src="" alt="" onclick="makeMove(0, 1)">
+      </div>
+      <div class="cell" onclick="makeMove(0, 2)">
+        <img id="cell-0-2" src="" alt="" onclick="makeMove(0, 2)">
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell" onclick="makeMove(1, 0)">
+        <img id="cell-1-0" src="" alt="" onclick="makeMove(1, 0)">
+      </div>
+      <div class="cell" onclick="makeMove(1, 1)">
+        <img id="cell-1-1" src="" alt="" onclick="makeMove(1, 1)">
+      </div>
+      <div class="cell" onclick="makeMove(1, 2)">
+        <img id="cell-1-2" src="" alt="" onclick="makeMove(1, 2)">
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell" onclick="makeMove(2, 0)">
+        <img id="cell-2-0" src="" alt="" onclick="makeMove(2, 0)">
+      </div>
+      <div class="cell" onclick="makeMove(2, 1)">
+        <img id="cell-2-1" src="" alt="" onclick="makeMove(2, 1)">
+      </div>
+      <div class="cell" onclick="makeMove(2, 2)">
+        <img id="cell-2-2" src="" alt="" onclick="makeMove(2, 2)">
+      </div>
+    </div>
+  </div>
+  <div id="message"></div>
+  <button id="play-again" onclick="resetGame(); playAgainSound()">Play Again</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
